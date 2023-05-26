@@ -6,6 +6,12 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const findIngridients = document.querySelector('#ingridients');
-const ingridientsElement = document.createElement('li')
+const findIngridients = document.querySelector('#ingredients');
 
+
+
+console.log(ingredients.forEach(el => {
+  const ingridientsElement = document.createElement('li')
+ ingridientsElement.textContent = `${el}`
+return findIngridients.append(ingridientsElement)
+}))
