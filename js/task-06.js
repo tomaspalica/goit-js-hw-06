@@ -5,7 +5,7 @@ validationInput.addEventListener("blur", (event) => {
  if(event.currentTarget.value.length < validationNumber && event.currentTarget.value.length > 0){
  validationInput.classList.remove("valid")
     validationInput.classList.add("invalid")
-} else if(event.currentTarget.value.length > validationNumber ) {  
+} else if(event.currentTarget.value.length >= validationNumber ) {  
 validationInput.classList.remove("invalid")
     validationInput.classList.add("valid")
 } else {
